@@ -14,7 +14,7 @@ class MyAppBar extends StatelessWidget {
         Text(
           'Welcome to Entry',
           style: TextStyle(
-            color: Colors.white,
+            color: const Color.fromARGB(255, 215, 205, 182),
             fontWeight: FontWeight.bold,
             fontSize: 20,
             fontFamily: mainFont,

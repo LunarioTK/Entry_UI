@@ -1,5 +1,6 @@
 import 'package:entry_app_ui/constants/uicolor.dart';
 import 'package:entry_app_ui/utils/appbar.dart';
+import 'package:entry_app_ui/utils/profilecard.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -9,13 +10,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: uiColor,
-      body: Column(
-        children: const [
-          Padding(
-            padding: EdgeInsets.fromLTRB(20, 40, 20, 0),
-            child: MyAppBar(),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
+        child: Column(
+          children: const [
+            MyAppBar(),
+            ProfileCard(),
+          ],
+        ),
       ),
     );
   }

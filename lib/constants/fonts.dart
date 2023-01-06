@@ -1,1 +1,1 @@
-String mainFont = 'PlayfairDisplay';
+String mainFont = 'Oswald';
