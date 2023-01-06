@@ -1,5 +1,6 @@
 import 'package:entry_app_ui/constants/uicolor.dart';
 import 'package:entry_app_ui/utils/appbar.dart';
+import 'package:entry_app_ui/utils/continuereadingcontainer.dart';
 import 'package:entry_app_ui/utils/profilecard.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,8 @@ class Home extends StatelessWidget {
           children: const [
             MyAppBar(),
             ProfileCard(),
+            SizedBox(height: 35),
+            ContinueReading(),
           ],
         ),
       ),
