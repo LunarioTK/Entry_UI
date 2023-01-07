@@ -16,8 +16,9 @@ class MyAppBar extends StatelessWidget {
           style: TextStyle(
             color: const Color.fromARGB(255, 215, 205, 182),
             fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontSize: 25,
             fontFamily: mainFont,
+            letterSpacing: 1,
           ),
         ),
 
@@ -25,6 +26,7 @@ class MyAppBar extends StatelessWidget {
         ElevatedButton(
           onPressed: (() {}),
           style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.all(3),
             shape: const CircleBorder(),
             elevation: 0,
             backgroundColor: buttonsColor,
@@ -32,7 +34,7 @@ class MyAppBar extends StatelessWidget {
           child: const Text(
             '..',
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 18,
             ),
           ),
         ),

@@ -12,12 +12,12 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: uiColor,
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
-        child: Column(
+        padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
+        child: ListView(
           children: const [
             MyAppBar(),
             ProfileCard(),
-            SizedBox(height: 35),
+            SizedBox(height: 20),
             ContinueReading(),
           ],
         ),
