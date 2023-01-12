@@ -27,7 +27,7 @@ class ContinueReading extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+            padding: const EdgeInsets.fromLTRB(14, 0, 20, 12),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -60,7 +60,9 @@ class ContinueReading extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(2.5),
                   child: ElevatedButton(
-                    onPressed: (() {}),
+                    onPressed: (() {
+                      Navigator.pushNamed(context, '/allbooks');
+                    }),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.fromLTRB(10, 13, 10, 13),
                       shape: const StadiumBorder(),

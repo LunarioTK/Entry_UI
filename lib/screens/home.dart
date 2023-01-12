@@ -17,24 +17,11 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
         child: ListView(
           shrinkWrap: true,
-          children: [
-            const MyAppBar(),
-            const ProfileCard(),
-            const SizedBox(height: 20),
-            const ContinueReading(),
-            StaggeredGrid.count(
-              crossAxisCount: 3,
-              mainAxisSpacing: 2,
-              crossAxisSpacing: 2,
-              children: const [
-                BookContainer(),
-                BookContainer(),
-                BookContainer(),
-                BookContainer(),
-                BookContainer(),
-                BookContainer(),
-              ],
-            ),
+          children: const [
+            MyAppBar(),
+            ProfileCard(),
+            SizedBox(height: 20),
+            ContinueReading(),
           ],
         ),
       ),
