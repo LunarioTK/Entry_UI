@@ -27,7 +27,7 @@ class ContinueReading extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(14, 0, 20, 12),
+            padding: const EdgeInsets.fromLTRB(14, 0, 20, 14),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -44,7 +44,7 @@ class ContinueReading extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(
-                        'Book name',
+                        'Last Book',
                         style: TextStyle(
                           fontFamily: mainFont,
                           color: smallTextColor,
